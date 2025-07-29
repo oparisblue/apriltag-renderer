@@ -9,11 +9,11 @@ This library for both web/HTML5 and Node generates [AprilTag](https://github.com
 | Tag36h9          | 5329           | 10   | <img width="50" src="examples/tag0_36h9.png">          |
 | Tag36h10         | 2320           | 10   | <img width="50" src="examples/tag0_36h10.png">         |
 | Tag36h11         | 587            | 10   | <img width="50" src="examples/tag0_36h11.png">         |
-| TagCircle21h7    | 38             | 9    | <img width="50" src="examples/tag0_circle21h7.png">    |
-| TagCircle49h12   | 65,698         | 11   | <img width="50" src="examples/tag0_circle49h12.png">   |
-| TagCustom48h12   | 42,211         | 10   | <img width="50" src="examples/tag0_custom48h12.png">   |
-| TagStandard41h12 | 2115           | 9    | <img width="50" src="examples/tag0_standard41h12.png"> |
-| TagStandard52h13 | 48,714         | 10   | <img width="50" src="examples/tag0_standard52h13.png"> |
+| TagCircle21h7    | 38             | 9    | <img width="50" src="examples/tag0_Circle21h7.png">    |
+| TagCircle49h12   | 65,698         | 11   | <img width="50" src="examples/tag0_Circle49h12.png">   |
+| TagCustom48h12   | 42,211         | 10   | <img width="50" src="examples/tag0_Custom48h12.png">   |
+| TagStandard41h12 | 2115           | 9    | <img width="50" src="examples/tag0_Standard41h12.png"> |
+| TagStandard52h13 | 48,714         | 10   | <img width="50" src="examples/tag0_Standard52h13.png"> |
 
 It provides methods to draw AprilTags from these families onto a canvas at any size (both HTML5 on the web and [node-canvas](https://www.npmjs.com/package/canvas/v/2.0.0-alpha.7) are supported), generate tag SVGs, and render tags as unicode text suitable to draw in the terminal or in a CLI. It also provides an API to get the raw positional data for each tag so you can create your own renderer if none of those are quite what you want.
 
