@@ -1,0 +1,23 @@
+{
+  "type": "module",
+  "license": "MIT",
+  "licenses": [
+    {
+      "type": "MIT"
+    },
+    {
+      "type": "UNKNOWN",
+      "url": "https://github.com/oparisblue/apriltag-renderer/blob/main/THIRD_PARTY_LICENSES.md"
+    }
+  ],
+  "scripts": {
+    "prebuild": "rm -rf build",
+    "builda": "esbuild src/index.ts --bundle --minify --platform=node --outdir=./build --external:canvas --format=esm",
+    "build": "esbuild $(find src -name \"*.ts\") --platform=node --outdir=./build"
+  },
+  "devDependencies": {
+    "@types/node": "^24.1.0",
+    "canvas": "^3.1.2",
+    "esbuild": "^0.25.8"
+  }
+}

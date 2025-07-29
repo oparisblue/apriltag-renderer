@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "rootDir": "src",
+    "strict": true,
+    "downlevelIteration": true,
+    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "Node",
+    "lib": ["ESNext", "DOM"],
+    "target": "esnext",
+    "skipLibCheck": true
+  }
+}
