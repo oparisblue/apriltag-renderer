@@ -125,7 +125,6 @@ This returns a result like:
   █ █  █
   ██████
 
-
 ```
 
 (this is best viewed with a font where the Unicode block character is displayed as a square)
@@ -154,7 +153,6 @@ This returns a result like:
  #### #
  # #  #
  ######
-
 
 ```
 
