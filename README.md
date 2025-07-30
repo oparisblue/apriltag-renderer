@@ -192,7 +192,7 @@ Unlike QR codes, the individual cells/pixels that make up an AprilTag have no in
 
 As such, it isn't really possible to write a library that really "generates" AprilTags on the fly (you can technically do this, as it was a script that came up with the original mappings, but it would be _very_ slow, since each AprilTag considers all the tags that came before, and requires those to be generated first --- one of their heuristics is that each tag shouldn't be too similar to the others).
 
-Instead, the best way to ship an AprilTag renderer is to precompute the pixel/cell layout for each tag ahead of time, and then to just render it in different ways. For this reason, this library is somewhat large, at ~1.8mb, as it has to include the binary data for all the code families. However, it is tree-shakable, so in your builds you will only include the binaries for the tag families that you use, and it is still better than some alternatives, which simply export pre-rendered PNGs / SVGs for each tag, whereas in this library the layout position for a single tag is represented as a single 64-bit binary int.
+Instead, the best way to ship an AprilTag renderer is to precompute the pixel/cell layout for each tag ahead of time, and then to just render it in different ways. For this reason, this library is somewhat large, at ~1.8mb, as it has to include the binary data for all the code families. However, **it is tree-shakable, so in your builds you will only include the binaries for the tag families that you use**, and it is still better than some alternatives, which simply export pre-rendered PNGs / SVGs for each tag, whereas in this library the layout position for a single tag is represented as a single 64-bit binary int.
 
 ## Credits
 

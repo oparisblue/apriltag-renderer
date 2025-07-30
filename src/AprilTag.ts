@@ -1,6 +1,6 @@
 import { Layout } from "./createLayout";
 
-type Bit = "b" | "w" | "t";
+type Bit = "b" | "w" | "x";
 interface RenderOptions {
   blackColor?: string;
   whiteColor?: string;
@@ -45,7 +45,7 @@ export abstract class AprilTag {
    * This is useful if you want to build your own renderer, rather than using one of the ones provided.
    *
    * The bitmap is represented as a square 2d array of values. Each value represents one "cell" on the AprilTag,
-   * where "w" is white, "b" is black, and "t" is transparent. You can index the grid using [y][x] to get the value
+   * where "w" is white, "b" is black, and "x" is transparent. You can index the grid using [y][x] to get the value
    * for that cell on the tag.
    *
    * @throws If the ID is not in range. You can use {@link isIdInRange} or {@link maxId} to check if an ID is valid first.

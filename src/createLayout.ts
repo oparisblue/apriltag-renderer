@@ -1,7 +1,7 @@
 import { decodeTagFamily } from "./decodeTagFamily";
 
 export interface Layout {
-  /** b=always black, w=always white, x=transparent (also white), d=data */
+  /** b=always black, w=always white, x=transparent, d=data */
   pattern: string[];
   bitCount: number;
   codes: bigint[];

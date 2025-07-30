@@ -7,6 +7,9 @@
     "moduleResolution": "Node",
     "lib": ["ESNext", "DOM"],
     "target": "esnext",
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "emitDeclarationOnly": true,
+    "declaration": true,
+    "declarationDir": "./build"
   }
 }
