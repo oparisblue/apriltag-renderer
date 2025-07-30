@@ -1,6 +1,6 @@
 {
   "name": "apriltag-renderer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Orlando Parisblue",
   "license": "MIT",
   "homepage": "https://github.com/oparisblue/apriltag-renderer",
@@ -18,14 +18,16 @@
       "url": "https://github.com/oparisblue/apriltag-renderer/blob/main/THIRD_PARTY_LICENSES.md"
     }
   ],
+  "sideEffects": false,
   "scripts": {
     "prebuild": "rm -rf lib",
-    "build": "tsup src/families/*.ts --dts --minify --outDir=lib --format=esm"
+    "build": "tsup src/families/*.ts src/index.ts --dts --minify --outDir=lib --format=esm"
   },
   "devDependencies": {
     "@types/node": "^24.1.0",
     "canvas": "^3.1.2",
-    "tsup": "^8.5.0"
+    "tsup": "^8.5.0",
+    "typescript": "^5.8.3"
   },
   "files": [
     "lib",

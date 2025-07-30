@@ -1,4 +1,4 @@
-import { A as AprilTag, L as Layout } from './AprilTag-O5k2LP1M.js';
+import { A as AprilTag, L as Layout } from '../AprilTag-O5k2LP1M.js';
 
 declare class AprilTagCircle49h12 extends AprilTag {
     /**
