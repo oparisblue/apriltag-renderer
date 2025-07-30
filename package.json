@@ -18,6 +18,8 @@
       "url": "https://github.com/oparisblue/apriltag-renderer/blob/main/THIRD_PARTY_LICENSES.md"
     }
   ],
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "sideEffects": false,
   "scripts": {
     "prebuild": "rm -rf lib",
